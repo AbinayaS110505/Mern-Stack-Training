@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            width: 100vw;
+            margin: right 20px;
+            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .section1 {
+            width: 70vw;
+            height: 12rem;
+            background: #ee9ca7;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            box-shadow:
+                7.6px 3.7px 4.5px -17px rgba(0, 0, 0, 0.085),
+                25.7px 12.5px 15px -17px rgba(158, 154, 154, 0.125),
+                115px 56px 67px -17px rgba(156, 155, 155, 0.21);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-img-section {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .profile-data {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+        }
+        .section2 {
+            width: 70%;
+            height: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .section3 {
+            width: 70%;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .section4 {
+            width: 70%;
+            height: 20rem;
+            background-color: rgb(250, 255, 253);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .section6 {
+            width: 70%;
+            height: 15rem;
+            background-color: rgb(250, 255, 253);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .section4-content {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        /* From Uiverse.io by xueyuantan */ 
+.button {
+ width: 9em;
+ height: 3em;
+ border-radius: 30em;
+ font-size: 15px;
+ font-family: inherit;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffc4c4;
+}
+
+button::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 30em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, rgb(255, 167, 221), rgb(255, 2, 150));
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+button:hover::before {
+ width: 9em;
+}
+
+/*
+ *  STYLE 6
+ */
+
+ *::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(207, 9, 118, 0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: rgb(247, 141, 185);	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+        .section5 {
+            width: 70%;
+            height: 20%;
+            background-color: rgb(255, 72, 194);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ff6c80;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f7808e, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .section-title {
+            color: rgb(2, 5, 29);
+            font-weight: bold;
+        }
+        .ed-table {
+            width: 100%;
+            border: 1px solid rgb(255, 165, 210);
+           
+        }
+        th, td {
+            padding: 1rem;
+            border: 1px solid rgb(255, 146, 206);
+        }
+        th{
+            background-color: #ee9ca7;;
+        
+        }
+        .companies {
+            font-weight: bold;
+            color: rgb(255, 137, 196);
+        }
+        .icons {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .sec {
+           
+            display: flex;
+            /* flex-direction: column; */
+            justify-self:center;
+            align-items: center;
+            height: 12rem;
+            gap:3rem;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="profile-img-section">
+            <img src="img.jpg" alt="" class="profile-img">
+        </div>
+        <div class="profile-data">
+            <h1>Abinaya S</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
+    </div>
+    <div class="section2">
+        <h1 class="section-title"><u>SUMMARY</u></h1>
+        <p>
+As a Full Stack Developer, I specialize in creating efficient and user-friendly applications across both front-end and back-end. I aim to deliver innovative solutions that enhance performance and user experience. 
+I’m passionate about continuous learning and contributing to impactful projects within a dynamic team.</p>
+    </div>
+    <div class="section3">
+        <h1 class="section-title">EDUCATION</h1>
+        <table class="ed-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>10th</td>
+                <td>School</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>12th</td>
+                <td>School</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>College</td>
+                <td>100%</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section4">
+        <div class="section4-content">
+            <h1 class="section-title"><u>INTERNSHIPS</u></h1>
+            <p>
+                <span class="companies">ShadowFox</span><br>
+                Sep 2024 <br>
+                Web Developer </p>
+        </div>
+        <div class="section4-content">
+            <h3 class="section-title"><u>SKILLS</u></h3>
+            <ul>
+                <li>C</li>
+                <li>Java</li>
+                <LI>
+                   MERN Stack Web develpment
+               </LI>
+               <li>Data Structure and Algorithms</li>
+              
+            </ul>
+        </div>
+    </div>
+    <div class="section5">
+        <a href="mailto:abinayas22it@srishakthi.ac.in" class="icons" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="tel:91+9585480087" class="icons">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://github.com/AbinayaS110505" class="icons" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+    
+    <div class="sec">
+        <button class="button"> Read it!
+        </button>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,15 @@
+.box-blue{
+    height: 30px;
+    width: 30px;
+    background-color:  aqua;
+}
+.box-black{
+    height: 30px;
+    width: 30px;
+    background-color:  rgb(253, 0, 169);
+}
+.box-green{
+    height: 30px;
+    width: 30px;
+   background-color: rgb(6, 255, 18);
+}

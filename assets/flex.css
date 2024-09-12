@@ -1,0 +1,32 @@
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    width:10rem;
+    height: 10rem;
+    font-size: x-large;
+    font-display: center;
+    
+}
+.blue{
+  
+    background-color:  aqua;
+}
+.pink{
+  
+    background-color:  rgb(253, 0, 169);
+}
+.green{
+  
+   background-color: rgb(6, 255, 18);
+}
